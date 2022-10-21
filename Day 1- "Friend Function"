@@ -1,0 +1,29 @@
+#include <iostream>  
+using namespace std;  
+class Distance  
+{  
+    private:  
+    int meters;  
+    public:   
+ Distance()  
+    {  
+        meters = 0;  
+    }   
+    void display_data()  
+    {  
+       cout << "Meters value : " << meters<<endl;  
+    }  
+    friend void addvalue(Distance &d);       
+};  
+void addvalue(Distance &d)  
+{  
+    d.meters = d.meters+20;  
+}   
+int main()  
+{  
+    Distance d1;   
+    d1.display_data(); 
+    addvalue(d1);  
+    d1.display_data(); 
+    return 0;  
+}  
