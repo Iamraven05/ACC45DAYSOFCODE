@@ -1,0 +1,29 @@
+#include 
+using namespace std;
+
+class Base_class
+{
+   public:
+    void print() 
+    {
+        cout << "The Base Function." << endl;
+    }
+};
+
+class Derived_class : public Base_class 
+{
+   public:
+    void print() 
+    {
+        cout << "The Derived Function." << endl;
+    }
+};
+
+int main() 
+{
+    
+    Derived_class d1;
+    d1.print();
+    
+    return 0;
+}
