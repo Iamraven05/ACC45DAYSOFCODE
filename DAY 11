@@ -1,0 +1,18 @@
+void updateNode(Node* head, int value, int newValue)
+{
+
+    Node* temp = head;
+    while(temp != NULL)
+    {
+
+        // If the node matches the given node to be updated.
+        if( temp->data == val)
+        {
+
+            // Updating the data part of the node with the new value.
+            temp->data = newVal;
+            return;
+        }
+        temp = temp->next;
+    }
+}
