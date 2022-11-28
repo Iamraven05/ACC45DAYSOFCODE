@@ -1,0 +1,4 @@
+str = "Rohan"  
+str2 = "ab"      
+str2 = str.join(str2)       
+print(str2)  
